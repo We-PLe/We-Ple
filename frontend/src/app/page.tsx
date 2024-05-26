@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Link from 'next/link';
 
 export default function Home() {
   const [userData, setUserData] = useState<string>('');
@@ -58,6 +59,12 @@ export default function Home() {
           height={37}
           priority
         />
+      </div>
+
+      <div>
+        <Link href="/mj">mj</Link>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Link href="/nk">nk</Link>
       </div>
 
       <div className={styles.grid}>

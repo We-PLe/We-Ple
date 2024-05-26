@@ -4,3 +4,8 @@ spring:
     url: jdbc:mysql://localhost:3306/we_ple_db?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
     username: root
     password: weple123
+
+---
+spring:
+  profiles:
+    active: local

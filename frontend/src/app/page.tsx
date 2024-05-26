@@ -12,7 +12,7 @@ export default function Home() {
     // 리턴 타입이 string인 데이터를 가져오는 함수
     const fetchUserData = async () => {
       try {
-        const response = await axios.get<string>('http://localhost:8080/api/users');
+        const response = await axios.get<string>('http://localhost:8080/api/hello');
         setUserData(response.data);
       } catch (error) {
         console.error('There was an error fetching the user data!', error);

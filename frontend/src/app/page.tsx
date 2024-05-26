@@ -1,10 +1,31 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 export default function Home() {
+  const [userData, setUserData] = useState<string>('');
+
+  useEffect(() => {
+    // 리턴 타입이 string인 데이터를 가져오는 함수
+    const fetchUserData = async () => {
+      try {
+        const response = await axios.get<string>('http://localhost:8080/api/users');
+        setUserData(response.data);
+      } catch (error) {
+        console.error('There was an error fetching the user data!', error);
+      }
+    };
+
+    fetchUserData();
+  }, []);
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
+        <p>서버로부터 가져온 데이터 : {userData}</p>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>

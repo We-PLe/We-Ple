@@ -1,5 +1,5 @@
 import logo from "../../logo.svg";
-import {useNavigate} from 'react-router-dom';
+import {useNavigate, Link} from 'react-router-dom';
 
 function Default() {
     const navigate = useNavigate();
@@ -23,6 +23,10 @@ function Default() {
                 >
                     Learn React
                 </a>
+                <div>
+                    <Link to="/main">Main</Link>
+                    <Link to="/map">Map</Link>
+                </div>
                 <div>
                     <button onClick={goToPage('/main')}>Main</button>
                     <button onClick={goToPage('/map')}>Map</button>

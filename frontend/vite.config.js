@@ -15,4 +15,16 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8080', // Spring Boot 서버 URL
+        changeOrigin: true,
+      },
+    },
+  },
+  build: {
+    outDir: '../backend/src/main/resources/static',
+  },
 })

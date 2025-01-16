@@ -5,7 +5,7 @@
         <!-- <button class="btn-primary">ads</button>
         <img src="../../img/123.png" class="" style="width:1000px;"> -->
         
-        <gmpx-api-loader key="AIzaSyCw4W4ku0CeroW6pPoFUPSSKx1IOAlMOVs" solution-channel="GMP_GE_mapsandplacesautocomplete_v2">
+        <gmpx-api-loader key="API키 넣는 곳" solution-channel="GMP_GE_mapsandplacesautocomplete_v2">
         </gmpx-api-loader>
         <gmp-map center="40.749933,-73.98633" zoom="13" map-id="DEMO_MAP_ID">
             <div slot="control-block-start-inline-start" class="place-picker-container">

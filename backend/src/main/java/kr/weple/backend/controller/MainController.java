@@ -10,7 +10,6 @@ public class MainController {
     @RequestMapping("/")
     public RedirectView defaultCallback() {
 
-        // test
         RedirectView redirectView = new RedirectView();
         redirectView.setUrl("http://localhost:5173/");
         return redirectView;

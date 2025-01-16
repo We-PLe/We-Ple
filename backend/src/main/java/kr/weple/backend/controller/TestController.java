@@ -1,4 +1,4 @@
-package kr.weple.backend;
+package kr.weple.backend.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

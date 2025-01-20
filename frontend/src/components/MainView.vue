@@ -1,12 +1,9 @@
-<!-- Copyright (C) 2020-2025 INOV - All rights reserved. -->
 <script setup>
 import { useTemplateRef, watch } from 'vue';
 import { GoogleMap } from 'vue3-google-map';
 
-console.log('[GMap] Setup');
-
 const map = {
-  key: '', // google key 입력
+  key: import.meta.env.VITE_GOOGLE_MAPS_API_KEY || "", // google key 초기화
   language: 'ko',
   region: 'KR',
   center: { lat: 37.5665, lng: 126.9780 }, // 서울 시청 좌표

@@ -135,4 +135,6 @@ dist/
 npm-debug.log
 yarn-error.log
 
+### config ###
+.env
 # End of https://www.toptal.com/developers/gitignore/api/java,vue,vuejs,intellij+iml

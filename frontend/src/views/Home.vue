@@ -2,31 +2,27 @@
 </script>
 
 <script>
-  export default {
+export default {
     name: 'Home',
-  };
+};
 </script>
 
 <template>
-    <div>
-        <h1>Home Page</h1>
-        <p>Welcome to the home page!</p>
-        <div class="row">
-            <div class="col">
-                <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="검색어를 입력하세요" data-sb-validations="required,email" />
-            </div>
-            <div class="col-auto">
-                <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
-            </div>
+    <main>
+        <div id="app">
+            <nav class="border">
+                <div class="d-flex bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">
+                        <router-link to="/">Main</router-link>
+                    </div>
+                    <div class="ms-auto p-2 bd-highlight">
+                        <router-link to="/account">회원가입</router-link>
+                    </div>
+                </div>
+            </nav>
+            <router-view></router-view>
         </div>
-
-        <input
-            type="text"
-            v-model="searchQuery"
-            placeholder="Type to search..."
-            @input="handleInput"
-        />
-    </div>
+    </main>
 </template>
 
 <style scoped>

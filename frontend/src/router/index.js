@@ -1,19 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 // 페이지 컴포넌트 임포트
-import Home from '@/views/Home.vue';
-import About from '@/views/About.vue';
+import Main from '@/views/Main.vue';
+import Account from '@/views/Account.vue';
 
 const routes = [
     {
         path: '/',
-        name: 'Home',
-        component: Home,
+        name: 'Main',
+        component: Main,
     },
     {
-        path: '/about',
-        name: 'About',
-        component: About,
+        path: '/account',
+        name: 'Account',
+        component: Account,
     },
 ];
 

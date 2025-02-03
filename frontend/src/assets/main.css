@@ -34,3 +34,7 @@ a,
         justify-content: center;
     }
 }
+
+.cp {
+    cursor: pointer;
+}

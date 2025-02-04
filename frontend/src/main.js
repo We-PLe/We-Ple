@@ -13,3 +13,6 @@ const app = createApp(App);
 app.use(router);
 app.use(Antd);
 app.mount('#app');
+
+// kakao login init
+window.Kakao.init(import.meta.env.VITE_KAKAO_LOGIN_API_KEY);

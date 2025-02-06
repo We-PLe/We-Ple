@@ -3,11 +3,20 @@ import {fileURLToPath, URL} from 'node:url'
 import {defineConfig} from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
+// Ant Design auto import(기본 태그와 같이 사용)
+import Components from "unplugin-vue-components/vite"
+import { AntDesignVueResolver } from "unplugin-vue-components/resolvers"
 
 // https://vite.dev/config/
 export default defineConfig({
     plugins: [
         vue(),
+        Components({
+            resolvers: [AntDesignVueResolver({
+                // style 에러로 인하여 추가
+                importStyle: 'less'
+            })],
+        }),
         vueDevTools(),
     ],
     resolve: {

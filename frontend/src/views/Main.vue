@@ -150,7 +150,7 @@ function filteredKeywords() {
    
 </template>
 
-<style>
+<style scoped>
 /* html,
 body, */
 #app {

@@ -39,7 +39,7 @@ export default defineConfig({
                 "style-src 'self' 'unsafe-inline' https://*.googleapis.com https://cdn.jsdelivr.net https://accounts.google.com; " +
                 "connect-src 'self' https://*.googleapis.com; " +
                 "font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; " +
-                "img-src 'self' https://maps.gstatic.com https://maps.googleapis.com https://k.kakaocdn.net http://k.kakaocdn.net; " +
+                "img-src 'self' data: blob: https://maps.gstatic.com https://maps.googleapis.com https://k.kakaocdn.net http://k.kakaocdn.net; " + // 여기 추가
                 "frame-src 'self' https://accounts.google.com; ",
         },
     },

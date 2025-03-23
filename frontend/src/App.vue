@@ -1,19 +1,13 @@
 <template>
     <AppHeader/>
     <Home />
+    <PlaceInfoModal />
 </template>
 
-<script>
+<script setup>
 import AppHeader from './components/AppHeader.vue';
 import Home from './views/Home.vue';
-
-export default {
-    name: 'App',
-    components: {
-        AppHeader,
-        Home,
-    },
-};
+import PlaceInfoModal from './components/place/PlaceInfo.vue';
 </script>
 
 <style scoped>
